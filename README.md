@@ -28,7 +28,7 @@ This project investigates whether it's possible to **predict repeat purchases** 
 
 ## 📁 Dataset Description
 
-We used the **Brazilian E-Commerce Public Dataset by Olist**, which contains orders from 2016 to 2018, across several relational tables:
+A **Brazilian E-Commerce Public Dataset by Olist** was used, which contains orders from 2016 to 2018, across several relational tables:
 
 - `orders`, `order_items`, `order_reviews`, `order_payments`, `customers`
 
@@ -42,7 +42,7 @@ Key characteristics:
 ## 🧼 Data Preparation
 
 To model retention:
-- We created a **temporal cutoff**: all purchases until `2017-05-31` are considered “past”; repeat purchases after this date define the target.
+- A **temporal cutoff**: was created with all purchases until `2017-05-31` are considered “past”; repeat purchases after this date define the target.
 - The **target variable (`retention`)** is binary: 1 = customer bought again after the cutoff, 0 = did not.
 
 Feature engineering included:
@@ -56,7 +56,7 @@ All transformations and aggregations were done using **SQL + pandas**.
 
 ## 📈 Modeling Approach
 
-We applied both **unsupervised** and **supervised** techniques:
+Both **unsupervised** and **supervised** techniques were applied:
 
 ### 🎯 Classification
 - **Goal**: Predict whether a customer will make another purchase
@@ -72,7 +72,7 @@ We applied both **unsupervised** and **supervised** techniques:
 > The model detected 41 true returning customers (true positives), valuable for focused marketing.
 
 ### 👥 Clustering
-We applied **K-Means** clustering to segment customers based on behavior and location. This revealed potential personas for targeted campaigns.
+**K-Means** was applied with clustering to segment customers based on behavior and location. This revealed potential personas for targeted campaigns.
 
 ---
 
@@ -167,4 +167,4 @@ pip install -r requirements.txt
 ## 🤝 Contact
 
 **André Teixeira**  
-[LinkedIn](https://www.linkedin.com/in/andrelteixeira/) | [GitHub](https://github.com/yourusername)
+[LinkedIn](https://www.linkedin.com/in/andremarquesteixeira/) | [GitHub](https://github.com/andreteixeira08)
